@@ -11,12 +11,17 @@ public class Mediatheque {
 	}
 	
 	public void printCatalog() {
-		for (Item i : items)
-			i.print();
+		System.out.println("Catalogue : ");
+		printCatalog printCatalog = new printCatalog();
+		for (Item i : items){
+			i.accept(printCatalog);}
 	}
 	
 	public void printOnlyBooks() {
-		throw new UnsupportedOperationException("Not supported yet."); 
+		System.out.println("Livres seulement : ");
+		printOnlyBooks printOnlyBooks = new printOnlyBooks();
+		for (Item i : items){
+			i.accept(printOnlyBooks);}
 		/*
 		//avec instanceof
 		for (Item i : items)
@@ -26,7 +31,10 @@ public class Mediatheque {
 	}
 
 	public void printOnlyCDs() {
-		throw new UnsupportedOperationException("Not supported yet."); 
+		System.out.println("CDs seulement : ");
+		printOnlyCDs printOnlyCDs = new printOnlyCDs();
+		for (Item i : items){
+			i.accept(printOnlyCDs);}
 	}
 
 }
