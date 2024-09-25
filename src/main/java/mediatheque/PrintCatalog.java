@@ -9,5 +9,6 @@ public class PrintCatalog implements ItemVisitor{
     @Override
     public void visit(CD cd) {
         cd.print();
+
     }
 }
