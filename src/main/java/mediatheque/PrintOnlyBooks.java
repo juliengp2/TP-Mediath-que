@@ -1,6 +1,6 @@
 package mediatheque;
 
-public class printCatalog implements ItemVisitor{
+public class PrintOnlyBooks implements ItemVisitor {
     @Override
     public void visit(Book book) {
         book.print();
@@ -8,6 +8,6 @@ public class printCatalog implements ItemVisitor{
 
     @Override
     public void visit(CD cd) {
-        cd.print();
+
     }
 }

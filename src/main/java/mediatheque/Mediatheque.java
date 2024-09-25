@@ -12,14 +12,14 @@ public class Mediatheque {
 	
 	public void printCatalog() {
 		System.out.println("Catalogue : ");
-		printCatalog printCatalog = new printCatalog();
+		PrintCatalog printCatalog = new PrintCatalog();
 		for (Item i : items){
 			i.accept(printCatalog);}
 	}
 	
 	public void printOnlyBooks() {
 		System.out.println("Livres seulement : ");
-		printOnlyBooks printOnlyBooks = new printOnlyBooks();
+		PrintOnlyBooks printOnlyBooks = new PrintOnlyBooks();
 		for (Item i : items){
 			i.accept(printOnlyBooks);}
 		/*
@@ -32,7 +32,7 @@ public class Mediatheque {
 
 	public void printOnlyCDs() {
 		System.out.println("CDs seulement : ");
-		printOnlyCDs printOnlyCDs = new printOnlyCDs();
+		PrintOnlyCDs printOnlyCDs = new PrintOnlyCDs();
 		for (Item i : items){
 			i.accept(printOnlyCDs);}
 	}
